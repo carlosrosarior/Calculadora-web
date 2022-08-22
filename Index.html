@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="EstiloGangnam.css">
+<title>Mi calculadora</title>
+</head>
+<body>
+
+<h1>Calculadora</h1>
+<table style="width: 50%">
+    <tr>
+        <td id="historia", style="height: 15px;font-size:10px" colspan="4"></tD>
+    </tr>
+    <tr>
+      <th id="resultado", style="height: 20px" colspan="4"></th>
+    </tr>
+    <tr>
+      <td onclick="agregarnumero(7)">7</td>
+      <td onclick="agregarnumero(8)">8</td>
+      <td onclick="agregarnumero(9)">9</td>
+      <td onclick="multiplicar(display)">x</td>
+    </tr>
+    <tr>
+      <td onclick="agregarnumero(4)">4</td>
+      <td onclick="agregarnumero(5)">5</td>
+      <td onclick="agregarnumero(6)">6</td>
+      <td onclick="restar(display)">-</td>
+    </tr>
+    <tr>
+      <td onclick="agregarnumero(1)">1</td>
+      <td onclick="agregarnumero(2)">2</td>
+      <td onclick="agregarnumero(3)">3</td>
+      <td onclick="sumar(display)">+</td>
+    </tr>
+    <tr>
+      <td onclick="hacerClear()">C</td>
+      <td onclick="agregarnumero(0)">0</td>
+      <td onclick="punto(display)">.</td>
+      <td onclick="igual(display)">=</td>
+    </tr>
+</table>
+</body>
+<script src="codigo.js"></script>
+</html>
