@@ -2,10 +2,8 @@ var display = 0;
 var historia = "";
 var num1 = 0;
 var ultimaOperacion = "";
-let currentNumber = undefined;
 
 const resultadoDisplay = document.getElementById("resultado")
-const historia = document.getElementById("historia")
 
 const onButtonPress = () => {
     refreshDisplay()
@@ -37,21 +35,14 @@ function refreshDisplay() {
 }
 
 function agregarnumero(numero){
-    if (currentNumber == undefined) {
-        currentNumber = numero
-    } else {
-        currentNumber *= 10
-        currentNumber + numero
+    if(display == "0")
+    {
+        display = String(numero);
     }
-    onButtonPress()
-    // if(display == "0")
-    // {
-    //     display = String(numero);
-    // }
-    // else
-    // {
-    //     display += String(numero);
-    // }
+    else
+    {
+        display += String(numero);
+    }
 }
 
 function sumar(datos){
