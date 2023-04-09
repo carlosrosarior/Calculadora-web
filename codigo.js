@@ -3,6 +3,8 @@ var historia = "";
 var num1 = 0;
 var ultimaOperacion = "";
 
+
+
 const resultadoDisplay = document.getElementById("resultado")
 
 const onButtonPress = () => {
